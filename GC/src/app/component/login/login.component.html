@@ -7,14 +7,9 @@
           <div class="entrenador">¿Eres un entrenador? <span class="subrayado">Da click aquí</span></div>
     </div>
     <div class="section section-right">
-        <div class="creacion">Create una cuenta gratis</div>
-        <form>
-            <label for="nombre">Nombre Completo</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
-          </form>
-          <br>
+        <div class="creacion">Inicia Sesión</div>
           <form>
-            <label for="correo">Correo</label><br>
+            <label for="correo">Correo electrónico</label><br>
             <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
           </form>
           <br>
@@ -23,11 +18,10 @@
             <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
           </form>
           <br>
-          <form>
-            <label for="ubicacion">Ubicación</label><br>
-            <input type="text" id="ubicacion" name="ubicacion" placeholder="Ingrese su ubicación">
-          </form>
-          <button class="button" routerLink="/Login">Crea tu cuenta</button>
-          <div class="inicio">¿Tienes ya una cuenta? <span class="negrita"  routerLink="/Login">INICIA SESION</span></div>
-    </div>
-  </div>
+          <button class="button" routerLink="/Home">Inicia Sesión</button>
+          <div class="inicio" routerLink="/Login/Fpassword"><u>¿Olvidaste tu contraseña?</u></div>
+          <section class="example-section">
+            <mat-checkbox class="example-margin" [(ngModel)]="checked">Recuerdame</mat-checkbox>
+          </section>        
+        </div>
+</div>

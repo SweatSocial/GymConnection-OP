@@ -57,11 +57,11 @@
     
     .creacion {
       position: absolute;
-      top: 20%;
-      left: 50%;
+      top: 23%;
+      left: 21%;
       transform: translate(-50%, -50%);
       margin-top: -50px; /* Ajusta el valor según sea necesario */
-      font-size: 30px;
+      font-size:40px;
       color: black;
     }
     
@@ -78,7 +78,7 @@
     }
   
     label {
-      font-weight: normal; /* Estilo del texto del label */
+      font-size: 20px; /* Estilo del texto del label */
       color :#7C838A;
     }
     //$input-background-color: map-get($my-warn-color, 100); /* Obtener el color de fondo del input */
@@ -96,7 +96,7 @@
     }
     .button {
         position: absolute;
-        bottom: 130px; /* Ajusta la posición verticalmente según sea necesario */
+        bottom: 230px; /* Ajusta la posición verticalmente según sea necesario */
         left: 50%; /* Ajusta la posición horizontalmente según sea necesario */
         transform: translateX(-50%); /* Centra horizontalmente el botón */
   
@@ -111,16 +111,12 @@
     .inicio {
         /* Estilos para el texto "¿Tienes ya una cuenta?" */
         position: absolute;
-        top: 90%;
-        left: 30%; // Ajusta la posición horizontalmente según sea necesario
+        top: 62%;
+        left: 25%; // Ajusta la posición horizontalmente según sea necesario
         transform: translate(-50%, -50%); // Centra el logotipo en el medio
-        font-size: 20px; // Ajusta el tamaño de fuente según sea necesario
+        font-size: 18px; // Ajusta el tamaño de fuente según sea necesario
         color:  #7C838A;// Establece el color del texto en blanco
         cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    }
-    
-    .negrita {
-        font-weight: bold; /* Aplica negrita al texto dentro del elemento span */
     }
   }
   
