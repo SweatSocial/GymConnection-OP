@@ -59,8 +59,19 @@
       "phone": "991000265",
       "email": "rodrigo.ray@upc.edu.pe",
       "password": "123456789"
+    },
+    {
+      "id": 6,
+      "name": "Kevin",
+      "age": null,
+      "description": "",
+      "image": "",
+      "department": "Lima",
+      "district": "San Miguel",
+      "phone": "",
+      "email": "kevinwi@gmail.com",
+      "password": "upc12345"
     }
-    
   ],
   "coachs": [
     {
