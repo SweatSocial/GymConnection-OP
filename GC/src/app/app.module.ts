@@ -25,7 +25,6 @@ import { FpasswordComponent } from './component/fpassword/fpassword.component';
 import { ClientComponent } from './component/client/client.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +33,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     HomeComponent,
     LoginComponent,
     FpasswordComponent,
-    ClientComponent
+    ClientComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -55,7 +55,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatCheckboxModule,
     MatDividerModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,24 +10,24 @@
         <div class="creacion">Create una cuenta gratis</div>
         <form>
             <label for="nombre">Nombre Completo</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" [(ngModel)]="cliente.name">
           </form>
           <br>
           <form>
             <label for="correo">Correo</label><br>
-            <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
+            <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" [(ngModel)]="cliente.email">
           </form>
           <br>
           <form>
             <label for="contrasena">Contraseña</label><br>
-            <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
+            <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" [(ngModel)]="cliente.password">
           </form>
           <br>
           <form>
             <label for="ubicacion">Ubicación</label><br>
-            <input type="text" id="ubicacion" name="ubicacion" placeholder="Ingrese su ubicación">
+            <input type="text" id="ubicacion" name="ubicacion" placeholder="Ingrese su ubicación" [(ngModel)]="cliente.district">
           </form>
-          <button class="button" routerLink="/Login">Crea tu cuenta</button>
+          <button class="button" routerLink="/Login" (click)="guardarDatos()">Crea tu cuenta</button>
           <div class="inicio">¿Tienes ya una cuenta? <span class="negrita"  routerLink="/Login">INICIA SESION</span></div>
     </div>
   </div>
