@@ -71,6 +71,18 @@
       "phone": "",
       "email": "kevinwi@gmail.com",
       "password": "upc12345"
+    },
+    {
+      "id": 7,
+      "name": "",
+      "age": null,
+      "description": "",
+      "image": "",
+      "department": "Lima",
+      "district": "",
+      "phone": "",
+      "email": "",
+      "password": ""
     }
   ],
   "coachs": [
