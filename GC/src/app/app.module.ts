@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,6 +22,10 @@ import { HomeComponent } from './component/home/home.component';
 import { LoginComponent } from './component/login/login.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FpasswordComponent } from './component/fpassword/fpassword.component';
+import { ClientComponent } from './component/client/client.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatTabsModule } from '@angular/material/tabs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +33,8 @@ import { FpasswordComponent } from './component/fpassword/fpassword.component';
     RegisterComponent,
     HomeComponent,
     LoginComponent,
-    FpasswordComponent
+    FpasswordComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,10 @@ import { FpasswordComponent } from './component/fpassword/fpassword.component';
     MatGridListModule,
     MatMenuModule,
     MatListModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatDividerModule,
+    MatTabsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
