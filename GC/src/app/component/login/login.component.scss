@@ -1,0 +1,121 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px; /* Espacio entre las columnas */
+    overflow-x: hidden;
+  }
+  .section {
+    /* Estilos generales de las secciones */
+    padding: 50vh; /* Espacio interno de las secciones */
+    width: auto;
+  }
+  .section-left {
+     //Fondo
+     background-image: url('../../../assets/register-login-img/Fondo.png'); // Ruta de la imagen de fondo para la columna izquierda
+     background-size: 100% 100%; // Ajusta el tamaño de la imagen para cubrir todo el fondo
+     background-repeat: no-repeat; // Evita que la imagen se repita
+     background-position: center; // Centra la imagen en el fondo   
+     //Logo   
+     position: relative; // Establece la posición relativa para poder posicionar el logotipo
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     .logo {
+         position: absolute;
+         top: 15%; // Ajusta la posición verticalmente según sea necesario
+         left: 50%; // Ajusta la posición horizontalmente según sea necesario
+         transform: translate(-50%, -50%); // Centra el logotipo en el medio
+       }
+     
+     .cliente {
+         position: absolute;
+         top:27%;
+         left: 50%; // Ajusta la posición horizontalmente según sea necesario
+         transform: translate(-50%, -50%); // Centra el logotipo en el medio
+         font-size: 40px; // Ajusta el tamaño de fuente según sea necesario
+         color: white; // Establece el color del texto en blanco
+       }
+       .entrenador {
+         position: absolute;
+         top: 90%;
+         left: 30%; // Ajusta la posición horizontalmente según sea necesario
+         transform: translate(-50%, -50%); // Centra el logotipo en el medio
+         font-size: 20px; // Ajusta el tamaño de fuente según sea necesario
+         color: white; // Establece el color del texto en blanco
+       }
+       .entrenador .subrayado {
+         text-decoration: underline;
+       }
+  }
+  
+  .section-right {    
+    background-color: white; /* Estilo de la sección derecha */
+    position: relative; /* Establece la posición relativa para poder posicionar el logotipo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .creacion {
+      position: absolute;
+      top: 23%;
+      left: 21%;
+      transform: translate(-50%, -50%);
+      margin-top: -50px; /* Ajusta el valor según sea necesario */
+      font-size:40px;
+      color: black;
+    }
+    
+    /* Formularios */
+    padding: 100px; /* Espacio interno de la sección derecha */
+    display: flex;
+    flex-direction: column;
+  
+    form {
+      margin-bottom: 40px; /* Espacio entre los formularios */
+      margin-right: 500px; /* Eliminar el desplazamiento hacia la izquierda */
+      //margin-left: -50px; /* Eliminar el desplazamiento hacia la izquierda */
+      
+    }
+  
+    label {
+      font-size: 20px; /* Estilo del texto del label */
+      color :#7C838A;
+    }
+    //$input-background-color: map-get($my-warn-color, 100); /* Obtener el color de fondo del input */
+
+    input {
+      width: 370%; /* Ancho completo del input */
+      padding: 5px; /* Espacio interno del input */
+      margin-top: 5px; /* Espacio superior del input */
+      border: 2px solid #f0b3b3; /* Borde del input */
+      border-radius: 15px; /* Radio de borde del input */
+      height: 45px; /* Altura del input */
+      background-color: #f0b3b3; /* Color de fondo del input */
+      font-size: 16px; /* Tamaño de fuente del texto dentro del input */
+      text-align:left; /* Alineación del texto al centro */
+    }
+    .button {
+        position: absolute;
+        bottom: 230px; /* Ajusta la posición verticalmente según sea necesario */
+        left: 50%; /* Ajusta la posición horizontalmente según sea necesario */
+        transform: translateX(-50%); /* Centra horizontalmente el botón */
+  
+        background-color: #FC837B; /* Color de fondo del botón */
+        color: white; /* Color del texto en el botón */
+        padding: 15px 100px; /* Espacio interno del botón */
+        border: none; /* Sin borde */
+        border-radius: 15px; /* Radio de borde del botón */
+        font-size: 30px; /* Tamaño de fuente del botón */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      }
+    .inicio {
+        /* Estilos para el texto "¿Tienes ya una cuenta?" */
+        position: absolute;
+        top: 62%;
+        left: 25%; // Ajusta la posición horizontalmente según sea necesario
+        transform: translate(-50%, -50%); // Centra el logotipo en el medio
+        font-size: 18px; // Ajusta el tamaño de fuente según sea necesario
+        color:  #7C838A;// Establece el color del texto en blanco
+    }
+  }
+  
