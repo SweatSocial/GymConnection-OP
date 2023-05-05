@@ -1,0 +1,115 @@
+.Body{
+    background-image: url('../../../assets/home-img/Fondo1.jpeg');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 186.93%;
+    top: 4rem;
+    left: 0px;
+}
+.Body h1{
+    position: absolute;
+    width: 39.86%;
+    height: 25.78%;
+    left: 110px;
+    top: 5rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: #FFFFFF
+}
+.Body p{
+    position: absolute;
+    width: 39.86%;
+    height: 5.85%;
+    left: 110px;
+    top: 25rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+button span{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+    color: #5D5A88;
+}
+.matchb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 210px;
+    height: 66px;
+    left: 110px;
+    top: 603.5px;
+}
+.groupb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 318px;
+    height: 66px;
+    left: 110px;
+    top: 706px;
+}
+.trainb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 361px;
+    height: 66px;
+    left: 110px;
+    top: 809px;
+}
+.tool{
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    left: 0px;
+    top: 0px;
+    display: flex;
+}
+.bar{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    gap: 50px;
+}
+.btx{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 18px;
+    text-align: center;
+    color: #5D5A88;    
+}
+.logos{
+    background-image: url('../../../assets/landing-page-img/logo.png');
+    background-size: cover;
+    background-color: black;
+}
+.calltocations{
+    position: absolute;
+    top: 58.94%;
+}
+.toolbtn{
+    border-radius: 40px;
+}
