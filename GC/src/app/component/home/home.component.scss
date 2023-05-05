@@ -3,42 +3,42 @@
     background-size: cover;
     position: absolute;
     width: 100%;
-    height: 186.93%;
+    height: 60rem;
     top: 4rem;
     left: 0px;
 }
 .Body h1{
     position: absolute;
-    width: 39.86%;
-    height: 25.78%;
-    left: 110px;
+    width: 30rem;
+    height: 15rem;
+    left: 7rem;
     top: 5rem;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 66px;
+    font-size: 3.5rem;
+    line-height: 100%;
     color: #FFFFFF
 }
 .Body p{
     position: absolute;
-    width: 39.86%;
-    height: 5.85%;
-    left: 110px;
+    width: 30rem;
+    height: 5rem;
+    left: 7rem;
     top: 25rem;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.10rem;
+    line-height: 100%;
     color: #FFFFFF;
 }
-button span{
+.toolbtn span{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 100;
     text-align: center;
     color: #5D5A88;
 }
@@ -49,10 +49,11 @@ button span{
     padding: 0px;
     gap: 24px;
     position: absolute;
-    width: 210px;
-    height: 66px;
-    left: 110px;
-    top: 603.5px;
+    width: 10rem;
+    height: 4rem;
+    left: 7rem;
+    top: 38rem;
+    border-radius: 40px;
 }
 .groupb{
     display: flex;
@@ -61,10 +62,11 @@ button span{
     padding: 0px;
     gap: 24px;
     position: absolute;
-    width: 318px;
-    height: 66px;
-    left: 110px;
-    top: 706px;
+    width: 16rem;
+    height: 4rem;
+    left: 7rem;
+    top: 44rem;
+    border-radius: 40px;
 }
 .trainb{
     display: flex;
@@ -73,43 +75,51 @@ button span{
     padding: 0px;
     gap: 24px;
     position: absolute;
-    width: 361px;
-    height: 66px;
-    left: 110px;
-    top: 809px;
+    width: 20rem;
+    height: 4rem;
+    left: 7rem;
+    top: 50rem;
+    border-radius: 40px;
 }
 .tool{
     position: absolute;
+    background-color: #dbdbd5;
     width: 100%;
-    height: 8%;
-    left: 0px;
+    height: 4rem;
     top: 0px;
     display: flex;
+    gap: 10rem;
 }
 .bar{
     width: 100%;
-    background-color: white;
+    height: 4rem;
+    background-color: #dbdbd5;
     display: flex;
-    gap: 50px;
+    gap: 10rem;
 }
 .btx{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 100%;
-    line-height: 18px;
+    line-height: 20%;
     text-align: center;
     color: #5D5A88;    
 }
 .logos{
+    width: 12.5rem;
+    height: 4rem;
+    left: 0rem;
     background-image: url('../../../assets/landing-page-img/logo.png');
     background-size: cover;
-    background-color: black;
+    background-color: #dbdbd5;
+    align-content: center;
 }
 .calltocations{
     position: absolute;
-    top: 58.94%;
+    top: 38rem;
 }
 .toolbtn{
     border-radius: 40px;
+    align-content: center;
 }
