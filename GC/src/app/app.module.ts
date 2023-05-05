@@ -21,13 +21,15 @@ import { RegisterComponent } from './component/register/register.component';
 import { HomeComponent } from './component/home/home.component';
 import { LoginComponent } from './component/login/login.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FpasswordComponent } from './component/fpassword/fpassword.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     RegisterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    FpasswordComponent
   ],
   imports: [
     BrowserModule,
