@@ -1,0 +1,78 @@
+{
+    "clients": [
+      {
+        "id": 1,
+        "name": "Sebastian Ramirez",
+        "age": "19",
+        "description": "Estudiante de ingeniería de Software en la UPC y Product Manager",
+        "image": "../../../assets/client-img/sebastian.png",
+        "department": "Lima",
+        "district": "Puente Piedra",
+        "phone": "991841339",
+        "email": "sebas.ram@upc.edu.pe",
+        "password": "123456789"
+      },
+      {
+        "id": 2,
+        "name": "Marco Collantes",
+        "age": "26",
+        "description": "Estudiante de ingeniería de Software en la UPC y ceo de Ambrosoli",
+        "image": "../../../assets/client-img/marco.png",
+        "department": "Lima",
+        "district": "Lince",
+        "phone": "984645122",
+        "email": "marco.coll@upc.edu.pe",
+        "password": "123456789"
+      },
+      {
+        "id": 3,
+        "name": "Pedro Perez",
+        "age": "19",
+        "description": "Estudiante de ingeniería de Software en la UPC y apostador.",
+        "image": "../../../assets/client-img/pedro.png",
+        "department": "Lima",
+        "district": "Carabayllo",
+        "phone": "994151189",
+        "email": "pedro.prz@upc.edu.pe",
+        "password": "123456789"
+      },
+      {
+        "id": 4,
+        "name": "Piero Stefano",
+        "age": "22",
+        "description": "Estudiante de ingeniería de Software en la UPC y gerente en Primax",
+        "image": "../../../assets/client-img/piero.png",
+        "department": "Lima",
+        "district": "Miraflores",
+        "phone": "984282655",
+        "email": "piero.ste@upc.edu.pe",
+        "password": "123456789"
+      },
+      {
+        "id": 5,
+        "name": "Rodrigo Raymundo",
+        "age": "21",
+        "description": "Estudiante de ingeniería de Software en la UPC y gerente en Promart",
+        "image": "../../../assets/client-img/rodrigo.png",
+        "department": "Lima",
+        "district": "San Miguel",
+        "phone": "991000265",
+        "email": "rodrigo.ray@upc.edu.pe",
+        "password": "123456789"
+      }
+    ],
+    "coachs": [
+      {
+        "id": 1,
+        "name": "Elio Navarrete",
+        "age": "22",
+        "description": "Ingeniería de Software egresao de la UPC",
+        "image": "../../../assets/couch.png",
+        "department": "Lima",
+        "district": "San Miguel",
+        "phone": "991294929",
+        "email": "elio.jeff@upc.edu.pe",
+        "password": "123456789"
+      }
+    ]
+  }
