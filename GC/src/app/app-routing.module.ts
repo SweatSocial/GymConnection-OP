@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'Register', component: RegisterComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Login/Fpassword', component: FpasswordComponent },
-  {path:'api/client', component: ClientComponent},
+  {path:  'api/client', component: ClientComponent},
   { path: 'Home', component: HomeComponent },
 
 ];
