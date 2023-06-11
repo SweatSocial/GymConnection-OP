@@ -1,110 +1,110 @@
 .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 .example-spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 section {
-  display: table;
+display: table;
 }
 
 .content {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(
-      150px,
-      1fr
-    )
-  );
+display: grid;
+grid-template-columns: repeat(
+  auto-fit,
+  minmax(
+    150px,
+    1fr
+  )
+);
 }
 
 .container {
-  display: grid;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
+display: grid;
+justify-content: space-between;
+align-items: center;
+height: 100vh;
 }
 
 .tabs {
-  justify-content: flex-start;
-  margin-left: 55%;
-  flex-basis: 50%;
-  height: 90%;
+justify-content: flex-start;
+margin-left: 55%;
+flex-basis: 50%;
+height: 90%;
 }
 
 .custom-tab-group {
-  height: 300px;
-  width: 600px;
+height: 600px;
+width: 600px;
 }
 
 mat-grid-tile {
-  border: 1px solid #b1adad;
+border: 1px solid #b1adad;
 }
 
 .match {
-  justify-content: flex-end;
-  flex-basis: 50%;
-  height: 100%;
-  position: absolute;
-  top: 65%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+justify-content: flex-end;
+flex-basis: 50%;
+height: 100%;
+position: absolute;
+top: 65%;
+left: 70%;
+transform: translate(-50%, -50%);
 }
 
 @media (max-width: 768px) {
-  .card {
-    max-width: 100%;
-  }
+.card {
+  max-width: 100%;
+}
 
-  .card-image {
-    max-height: 200px;
-  }
+.card-image {
+  max-height: 200px;
+}
 }
 
 .example-tab-group-container {
-  width: 200px !important;
-  height: 100px !important;
-  display: flex;
-  justify-content: center;
+width: 200px !important;
+height: 100px !important;
+display: flex;
+justify-content: center;
 }
 
 .example-card {
-  display: flex;
-  justify-content: ri;
-  object-fit: cover;
-  align-items: center;
+display: flex;
+justify-content: right;
+object-fit: cover;
+align-items: center;
 }
 
 .divider-invisible {
-  border-color: transparent;
-  border-width: 0px;
-  display: none;
+border-color: transparent;
+border-width: 0px;
+display: none;
 }
 
 .example-button-row {
-  display: table-cell;
-  max-width: 1000px !important;
-  max-height: 1000px !important;
+display: table-cell;
+max-width: 1000px !important;
+max-height: 1000px !important;
 }
 .example-button-row .mat-mdc-button-base {
-  margin: 30px 30px 0 !important;
+margin: 30px 30px 0 !important;
 }
 .example-flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 .example-button-container {
-  width: 200px !important;
-  height: 100px !important;
-  display: flex;
-  justify-content: center;
+width: 200px !important;
+height: 100px !important;
+display: flex;
+justify-content: center;
 }
 
 .picture {
@@ -112,4 +112,94 @@ position: relative;
 width: 300px;
 height: 400px;
 margin-left: 12.5%;
+}
+
+.example-form {
+min-width: 150px;
+max-width: 500px;
+width: 100%;
+}
+
+.example-full-width {
+width: 100%;
+}
+
+.chat-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+background-color: #f2f2f2;
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 0px 0px 10px 10px;
+}
+
+.message-content{
+flex: 1;
+padding: 5px;
+margin-right: 10px;
+border: 1px solid #000000;
+border-radius: 4px;
+width: 520px;
+}
+
+.chat-header {
+height: 20px;
+background-color: #FC837B;
+color: white;
+font-size: 20px;
+font-weight: 700;
+height: 35px;
+border: 1px solid #000000;
+border-radius: 10px 10px 0px 0px;
+}
+
+.icon-call {
+position: absolute;
+top: 0px;
+}
+
+p.with-padding {
+padding: 0.5rem; 
+}
+
+.received {
+display: block;
+float: left;
+background-color: #FFB7B3;
+color: white;
+min-width: 50.01%;
+border-radius: 10px;
+text-align: left;
+}
+
+.sent {
+display: block;
+float: right;
+background-color: #FC837B;
+color: white;
+min-width: 50.01%;
+border-radius: 10px;
+text-align: left;
+}
+
+.msg-container {
+overflow: scroll;
+padding: 0.3rem;
+}
+
+.msg-container {
+max-height: 100%;
+overflow: auto;
+scrollbar-width: thin;
+scrollbar-color: transparent transparent;
+}
+
+.msg-container::-webkit-scrollbar {
+width: 6px;
+}
+
+.msg-container::-webkit-scrollbar-thumb {
+background-color: transparent;
 }
