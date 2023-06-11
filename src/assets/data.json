@@ -14,18 +14,6 @@
     },
     {
       "id": 2,
-      "name": "Marco Collantes",
-      "age": "26",
-      "description": "Estudiante de ingeniería de Software en la UPC y ceo de Ambrosoli",
-      "image": "../../../assets/client-img/marco.png",
-      "department": "Lima",
-      "district": "Lince",
-      "phone": "984645122",
-      "email": "marco.coll@upc.edu.pe",
-      "password": "123456789"
-    },
-    {
-      "id": 3,
       "name": "Pedro Perez",
       "age": "19",
       "description": "Estudiante de ingeniería de Software en la UPC y apostador.",
@@ -37,7 +25,7 @@
       "password": "123456789"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Piero Stefano",
       "age": "22",
       "description": "Estudiante de ingeniería de Software en la UPC y gerente en Primax",
@@ -49,7 +37,7 @@
       "password": "123456789"
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Rodrigo Raymundo",
       "age": "21",
       "description": "Estudiante de ingeniería de Software en la UPC y gerente en Promart",
@@ -59,30 +47,6 @@
       "phone": "991000265",
       "email": "rodrigo.ray@upc.edu.pe",
       "password": "123456789"
-    },
-    {
-      "id": 6,
-      "name": "Kevin",
-      "age": null,
-      "description": "",
-      "image": "",
-      "department": "Lima",
-      "district": "San Miguel",
-      "phone": "",
-      "email": "kevinwi@gmail.com",
-      "password": "upc12345"
-    },
-    {
-      "id": 7,
-      "name": "",
-      "age": null,
-      "description": "",
-      "image": "",
-      "department": "Lima",
-      "district": "",
-      "phone": "",
-      "email": "",
-      "password": ""
     }
   ],
   "coachs": [

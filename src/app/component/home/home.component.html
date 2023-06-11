@@ -5,7 +5,7 @@
         <button mat-button class="toolbtn" routerLink="/api/client"><span>Match</span></button>
         <button mat-button class="toolbtn"><span>Mis rutinas</span></button>
         <button mat-button class="toolbtn"><span>Contratos</span></button>
-        <button mat-button class="toolbtn"><span>Mi perfil</span></button>
+        <button mat-button class="toolbtn" routerLink="/Profile"><span>Mi perfil</span></button>
         <button mat-button class="toolbtn" routerLink="/Login"><span>Cerrar sesión</span></button>
       </mat-toolbar>
     </div>
@@ -15,8 +15,8 @@
     <p style="font-size: 20px">Accede ahora mismo a las diferentes opciones de nuestra web, 
       y mejora tu condición física en la mejor condición posible</p>
     <div class="calltoactions">
-      <button mat-raised-button class="matchb"><span class="btx" routerLink="/api/client">Haz match ya</span></button>
-      <button mat-raised-button class="groupb"><span class="btx">Encuentra a tu grupo ideal</span></button>
-      <button mat-raised-button class="trainb"><span class="btx">Encuentra a tu entrenador ideal</span></button>
+      <button mat-raised-button class="matchb" routerLink="/api/client"><span class="btx">Haz match ya</span></button>
+      <button mat-raised-button class="groupb" routerLink="/api/client"><span class="btx" >Encuentra a tu grupo ideal</span></button>
+      <button mat-raised-button class="trainb" routerLink="/api/client"><span class="btx">Encuentra a tu entrenador ideal</span></button>
     </div>
   </div>
