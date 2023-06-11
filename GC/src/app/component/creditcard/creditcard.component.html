@@ -1,0 +1,17 @@
+<div class="container">
+    <label class="title">Metodo de pago</label>
+    <div class="card">
+        <div class="opciones-pago">
+            <button class="master" [class.selected]="selectedOption === 'Mastercard'" (click)="selectOption('Mastercard')">Mastercard</button>
+            <button class="visa" [class.selected]="selectedOption === 'Visa'" (click)="selectOption('Visa')">Visa</button>
+          </div>
+      <form class="form-pagos">
+        <input class="card-input" type="text" placeholder="Nombre del propietario">
+        <input class="card-input" type="text" placeholder="Numero de la tarjeta">
+        <input class="card-input" type="text" placeholder="Fecha de vencimiento">
+        <input class="card-input" type="text" placeholder="Codigo de Seguridad">        
+        <button class="save-button">Guardar</button>
+      </form>
+    </div>
+  </div>
+  

@@ -7,6 +7,7 @@ import { FpasswordComponent } from './component/fpassword/fpassword.component';
 import { HomeComponent } from './component/home/home.component';
 import { ClientComponent } from './component/client/client.component';
 import { ProfileComponent } from './component/profile/profile.component';
+import { CreditcardComponent } from './component/creditcard/creditcard.component';
 const routes: Routes = [
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
   { path: 'landing-page', component: LandingPageComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:  'api/client', component: ClientComponent},
   { path: 'Home', component: HomeComponent },
   { path: 'Profile', component: ProfileComponent },
+  { path: 'Credit', component: CreditcardComponent }
 
 ];
 

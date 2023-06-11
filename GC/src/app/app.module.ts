@@ -26,6 +26,7 @@ import { ClientComponent } from './component/client/client.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ProfileComponent } from './component/profile/profile.component';
+import { CreditcardComponent } from './component/creditcard/creditcard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { ProfileComponent } from './component/profile/profile.component';
     FpasswordComponent,
     ClientComponent,
     ProfileComponent,
+    CreditcardComponent,
 
   ],
   imports: [
