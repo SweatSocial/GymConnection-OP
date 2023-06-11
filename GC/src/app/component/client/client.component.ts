@@ -93,7 +93,7 @@ export class ClientComponent {
 
   changePersonMatch(event: MatTabChangeEvent) {
     const selectedIndex = event.index;
-    if(selectedIndex == 1 || selectedIndex == 2) {
+    if(selectedIndex == 0 || selectedIndex == 2) {
       this.viewMatchClient = !this.viewMatchClient;
     }
   }
