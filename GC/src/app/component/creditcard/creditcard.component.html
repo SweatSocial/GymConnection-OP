@@ -6,11 +6,11 @@
             <button class="visa" [class.selected]="selectedOption === 'Visa'" (click)="selectOption('Visa')">Visa</button>
           </div>
       <form class="form-pagos">
-        <input class="card-input" type="text" placeholder="Nombre del propietario">
-        <input class="card-input" type="text" placeholder="Numero de la tarjeta">
-        <input class="card-input" type="text" placeholder="Fecha de vencimiento">
-        <input class="card-input" type="text" placeholder="Codigo de Seguridad">        
-        <button class="save-button">Guardar</button>
+        <input class="card-input" type="text" placeholder="Nombre del propietario" name="nombrePropietario" [(ngModel)]="nombrePropietario">
+        <input class="card-input" type="text" placeholder="Numero de la tarjeta" name="numeroTarjeta" [(ngModel)]="numeroTarjeta">
+        <input class="card-input" type="text" placeholder="Fecha de vencimiento" name="fechaVencimiento" [(ngModel)]="fechaVencimiento">
+        <input class="card-input" type="text" placeholder="Codigo de Seguridad" name="codigoSeguridad" [(ngModel)]="codigoSeguridad">        
+        <button class="save-button" (click)="savePayment()" routerLink="/Profile">Guardar</button>
       </form>
     </div>
   </div>

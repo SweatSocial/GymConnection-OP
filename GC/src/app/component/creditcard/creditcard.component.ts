@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./creditcard.component.scss']
 })
 export class CreditcardComponent {
-  selectedOption: string;
+  nombrePropietario: string='';
+  numeroTarjeta: string='';
+  fechaVencimiento: string='';
+  codigoSeguridad: string='';
+  selectedOption: string='';
 
   constructor() {
     this.selectedOption = 'Mastercard'; // Inicializar la opción seleccionada
@@ -17,7 +21,9 @@ export class CreditcardComponent {
   }
 
   savePayment() {
-    // Lógica para guardar el método de pago
-    // Obtener los datos del formulario y realizar las acciones necesarias
+   console.log(this.nombrePropietario);
+   console.log(this.numeroTarjeta);
+   console.log(this.fechaVencimiento);
+   console.log(this.selectedOption);
   }
 }

@@ -52,11 +52,13 @@
   }
   
  .form-pagos input{
-    width: 100%;
+    width: 80%;
     margin-bottom: 10px;
     padding: 8px;
     border: 1px solid #070707;
     border-radius: 4px;
+    margin-top: 25px; /* Ajusta el valor según tus preferencias */
+    margin-left: 9%; /* Ajusta el valor según tus preferencias */
   }
   
   .save-button {
@@ -67,6 +69,7 @@
     padding: 10px 20px;
     cursor: pointer;
     margin-left: 40%; /* Agrega la cantidad de margen hacia la derecha que desees */
+    margin-top: 15px; /* Ajusta el valor según tus preferencias */
 
   }
   .card-input {
