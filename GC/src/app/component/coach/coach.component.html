@@ -1,0 +1,74 @@
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<p>
+    <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/Home">
+            <mat-icon class="button-home">home</mat-icon>
+        </button>
+    </mat-toolbar>
+</p>
+
+
+<div class="content">
+    <div class="container">
+        <div class="tabs">
+            <mat-tab-group class="custom-tab-group mat-tab-group--dynamic-height">
+                <mat-tab label="Gym Bro">
+                    <mat-grid-list cols="3" rowHeight="250px">
+                        <mat-grid-tile *ngFor="let coachMatch of coachsMatch"
+                            (click)="chargeViewMatch(coachMatch.name)">
+                            <img width="180px" src="{{ coachMatch.image }}" alt="{{coachMatch.name}}">
+                        </mat-grid-tile>
+                    </mat-grid-list>
+                </mat-tab>
+                <mat-tab label="Grupos">
+                    <mat-grid-list cols="2" rowHeight="250px">
+                        <mat-grid-tile *ngFor="let group of groups" (click)="chargeViewMatch(group.name)">
+                            {{group.name}}
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                        </mat-grid-tile>
+                    </mat-grid-list>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+
+        <div class="match" *ngIf="viewMatch">
+            <div class="example-card">
+              <div>
+                <img class="picture" src="../../../assets/coach-img/fondo-coach.png">
+              </div>
+            </div>
+          </div>
+
+        <div class="match" *ngIf="viewChat">
+            <div class="example-card" *ngFor="let coach of coachs">
+                <div style="width: 600px;">
+                    <mat-card>
+                        <mat-card-header class="chat-header">
+                            <span>{{addressee}}</span>
+                            <span class="example-spacer"></span>
+                            <mat-icon>call</mat-icon>
+                        </mat-card-header>
+                        <mat-card-content style="height: 550px;">
+                            <div id="containerMsj" class="msg-container">
+                                <p *ngFor="let message of messages" class="msj with-padding"
+                                    [ngClass]="(coachLogged == message.transmitter)? 'sent' : 'received'">
+                                    {{message.text}}
+                                </p>
+                            </div>
+                        </mat-card-content>
+                        <form>
+                            <form class="chat-container" (ngSubmit)="sendMsg()">
+                                <mat-form-field class="example-full-width">
+                                    <input class="message-content" matInput placeholder="Ingrese su mensaje"
+                                        autocomplete="off" [(ngModel)]="newMsg" [ngModelOptions]="{standalone: true}">
+                                </mat-form-field>
+                            </form>
+                        </form>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

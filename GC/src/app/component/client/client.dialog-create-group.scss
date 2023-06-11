@@ -1,0 +1,78 @@
+.dialogBackground {
+    background-color: #FC837B;
+  }
+  
+  .dialogTotal {
+    flex-direction: column;
+  }
+  
+  .dialogContainer {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .inputBasic {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dataInput {
+      border: none;
+      outline: none;
+      color: black;
+      text-align: center;
+      font-size: 17px;
+      width: 260px;
+      height: 60px;
+      background: #FFB7B3;
+      border-radius: 10px;
+  }
+  
+  .pictureBasic {
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  
+  .image-container img {
+      width: 40px;
+      height: auto;
+      border-radius: 7px;
+  }
+  
+  .linkShare {
+    justify-content: center;
+  }
+  
+  .linkInput {
+    border: none;
+      outline: none;
+      color: black;
+      text-align: center;
+      font-size: 17px;
+      width: 455px;
+      height: 60px;
+      background: #FFB7B3;
+      border-radius: 10px;
+  }
+  
+  .createButton {
+    border: none;
+      outline: none;
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      width: 260px;
+      height: 75px;
+      background: #FFB7B3;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      margin-left: 105px;
+  }
+  
+  .createButton:hover {
+    background-color: #FC5C52; /* Color de fondo al pasar el cursor */
+  }
+  
+  .createButton:hover {
+    cursor: pointer; /* Cambia el cursor al pasar el cursor sobre el botón */
+  }

@@ -1,7 +1,8 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <p>
-    <mat-toolbar color="primary">
-     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/Home">
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/Home">
       <mat-icon class="button-home">home</mat-icon>
     </button>
   </mat-toolbar>
@@ -11,71 +12,101 @@
 <div class="content">
   <div class="container">
     <div class="tabs">
-      <mat-tab-group class="custom-tab-group mat-tab-group--dynamic-height">
+      <mat-tab-group class="custom-tab-group mat-tab-group--dynamic-height"
+        (selectedTabChange)="changePersonMatch($event)">
         <mat-tab label="Gym Bro">
           <mat-grid-list cols="3" rowHeight="250px">
-            <mat-grid-tile *ngFor="let clientMatch of clientsMatch">
-              <img src="{{ clientMatch.image }}" alt="{{clientMatch.name}}">
+            <mat-grid-tile *ngFor="let clientMatch of clientsMatch" (click)="chargeViewMatch(clientMatch.name)">
+              <img width="180px" src="{{ clientMatch.image }}" alt="{{clientMatch.name}}">
             </mat-grid-tile>
           </mat-grid-list>
         </mat-tab>
         <mat-tab label="Grupos">
           <mat-grid-list cols="2" rowHeight="250px">
-            <mat-grid-tile> Grupo 5 u.u</mat-grid-tile>
-          <mat-grid-tile> Grupo de Open Source 7_7</mat-grid-tile>
-          <mat-grid-tile>
-            <div class="example-button-container">
-              <button mat-fab color="disabled">
-                <mat-icon>add_circle</mat-icon>
-              </button>
-            </div>
-          </mat-grid-tile>
+            <mat-grid-tile *ngFor="let group of groups" (click)="chargeViewMatch(group.name)">
+              {{group.name}}
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <div class="example-button-container">
+                <button mat-fab color="disabled" (click)="openDialog()">
+                  <mat-icon>add_circle</mat-icon>
+                </button>
+              </div>
+            </mat-grid-tile>
           </mat-grid-list>
         </mat-tab>
         <mat-tab label="Entrenadores">
-          
+          <mat-grid-list cols="3" rowHeight="250px">
+            <mat-grid-tile *ngFor="let coachMatch of coachsMatch" (click)="chargeViewMatch(coachMatch.name)">
+              <img width="180px" src="{{ coachMatch.image }}" alt="{{coachMatch.name}}">
+            </mat-grid-tile>
+          </mat-grid-list>
         </mat-tab>
       </mat-tab-group>
     </div>
 
-      <div class="match">
-        <div class="example-card" *ngFor="let client of clients">
-          <div style="width: 400px; margin: 0 auto;">
-              <mat-card >
-                  <mat-card-header>
-                      <img mat-card-avatar src="../../../assets/user-logo.png">
-                      <mat-card-title>{{ client.name }}</mat-card-title>
-                      <mat-card-subtitle>{{ client.age }}</mat-card-subtitle>
-                  </mat-card-header>
-                  <img mat-card-image class="picture" src="{{ client.image }}">
-                  <mat-card-content>
-                      <mat-card-title>{{ client.description }}</mat-card-title>
-                      <mat-card-subtitle>{{ client.district }}</mat-card-subtitle>
-                  </mat-card-content>
-                  <mat-card-footer>
-                  </mat-card-footer>
-              </mat-card>
+    <div class="match" *ngIf="viewMatch">
+      <div class="example-card" *ngFor="let client of clients">
+        <div style="width: 400px">
+          <mat-card>
+            <img mat-card-image class="picture" src="{{ client.image }}">
+            <mat-card-content>
+              <mat-card-title>{{ client.name }} ({{ client.age }})</mat-card-title>
+              <mat-card-subtitle>{{ client.description }}</mat-card-subtitle>
+            </mat-card-content>
+            <mat-card-footer>
+            </mat-card-footer>
+          </mat-card>
+        </div>
+      </div>
+      <mat-divider class="divider-invisible"></mat-divider>
+      <section>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <div class="example-button-container">
+              <button mat-fab color="warn" (click)="dislike()">
+                <mat-icon>close</mat-icon>
+              </button>
+            </div>
+
+            <div class="example-button-container">
+              <button mat-fab background-color="green" (click)="like()">
+                <mat-icon>thumb_up</mat-icon>
+              </button>
+            </div>
           </div>
         </div>
-        <mat-divider class="divider-invisible"></mat-divider>
-          <section>
-              <div class="example-button-row">
-                  <div class="example-flex-container">
-                    <div class="example-button-container">
-                      <button mat-fab color="warn" (click)="dislike()">
-                        <mat-icon>close</mat-icon>
-                      </button>
-                    </div>
-      
-                    <div class="example-button-container">
-                      <button mat-fab color="accent" (click)="like()">
-                        <mat-icon>favorite</mat-icon>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-            </section>
+      </section>
+    </div>
+
+    <div class="match" *ngIf="viewChat">
+      <div class="example-card" *ngFor="let client of clients">
+        <div style="width: 600px;">
+          <mat-card>
+            <mat-card-header class="chat-header">
+              <span>{{addressee}}</span>
+              <span class="example-spacer"></span>
+              <mat-icon>call</mat-icon>
+            </mat-card-header>
+            <mat-card-content style="height: 550px;">
+              <div id="containerMsj" class="msg-container">
+                <p *ngFor="let message of messages" class="msj with-padding"
+                  [ngClass]="(userLogged == message.transmitter)? 'sent' : 'received'">
+                  {{message.text}}
+                </p>
+              </div>
+            </mat-card-content>
+            <form>
+              <form class="chat-container" (ngSubmit)="sendMsg()">
+                <mat-form-field class="example-full-width">
+                  <input class="message-content" matInput placeholder="Ingrese su mensaje" autocomplete="off"
+                    [(ngModel)]="newMsg" [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+              </form>
+            </form>
+          </mat-card>
+        </div>
       </div>
+    </div>
   </div>
-  </div>
-    
+</div>
