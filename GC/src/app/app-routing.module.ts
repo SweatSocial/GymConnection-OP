@@ -6,6 +6,7 @@ import { LoginComponent } from './component/login/login.component';
 import { FpasswordComponent } from './component/fpassword/fpassword.component';
 import { HomeComponent } from './component/home/home.component';
 import { ClientComponent } from './component/client/client.component';
+import { ProfileComponent } from './component/profile/profile.component';
 const routes: Routes = [
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
   { path: 'landing-page', component: LandingPageComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'Login/Fpassword', component: FpasswordComponent },
   {path:  'api/client', component: ClientComponent},
   { path: 'Home', component: HomeComponent },
+  { path: 'Profile', component: ProfileComponent },
 
 ];
 

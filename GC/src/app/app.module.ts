@@ -25,6 +25,7 @@ import { FpasswordComponent } from './component/fpassword/fpassword.component';
 import { ClientComponent } from './component/client/client.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
+import { ProfileComponent } from './component/profile/profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     LoginComponent,
     FpasswordComponent,
     ClientComponent,
+    ProfileComponent,
 
   ],
   imports: [

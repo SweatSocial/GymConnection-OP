@@ -1,0 +1,77 @@
+<div>
+    <div class="toolbar">
+      <button mat-icon-button routerLink="/Home">
+        <mat-icon class="custom-icon" >home</mat-icon>
+      </button>
+    </div>
+    <button mat-raised-button class="credit" >Gestionar metodo de pago</button>
+    <div class="formulario">
+        <div class="flex flex-column gap-2">
+          <mat-form-field appearance="fill" style=" width: 80%;">
+            <mat-label>Nombre</mat-label>
+            <input matInput id="nombre" [(ngModel)]="userData.nombre" [readonly]="!isEditing"/>
+          </mat-form-field>
+        </div>
+        <div class="flex flex-column gap-2">
+          <mat-form-field appearance="fill" style=" width: 80%;">
+            <mat-label>Apellido</mat-label>
+            <input matInput id="apellido" [(ngModel)]="userData.apellido"[readonly]="!isEditing" />
+          </mat-form-field>
+        </div>
+        <div class="flex flex-column gap-2">
+          <mat-form-field appearance="fill" style=" width: 80%;">
+            <mat-label>Correo</mat-label>
+            <input matInput id="correo" [(ngModel)]="userData.correo" [readonly]="!isEditing" />
+          </mat-form-field>
+        </div>
+        <div class="flex flex-column gap-2">
+          <mat-form-field appearance="fill" style=" width: 80%;">
+            <mat-label>Departamento</mat-label>
+            <input matInput id="departamento" [(ngModel)]="userData.departamento" [readonly]="!isEditing"/>
+          </mat-form-field>
+        </div>
+        <div class="flex flex-column gap-2">
+          <mat-form-field appearance="fill" style=" width: 80%;">
+            <mat-label>Distrito</mat-label>
+            <input matInput id="distrito" [(ngModel)]="userData.distrito" [readonly]="!isEditing"/>
+          </mat-form-field>
+        </div>
+        <div class="flex flex-column gap-2">
+          <mat-form-field appearance="fill" style=" width: 80%;">
+            <mat-label>Dirección</mat-label>
+            <input matInput id="direccion" [(ngModel)]="userData.direccion" [readonly]="!isEditing"/>
+          </mat-form-field>
+        </div>
+        <div class="flex flex-column gap-2">
+          <mat-form-field appearance="fill" style=" width: 80%;">
+            <mat-label>Celular</mat-label>
+            <input matInput id="celular" [(ngModel)]="userData.celular"[readonly]="!isEditing" />
+          </mat-form-field>
+        </div>
+        <div class="flex flex-column gap-2">
+          <mat-form-field appearance="fill" style=" width: 80%;">
+            <mat-label>Contraseña</mat-label>
+            <input matInput id="contraseña" [(ngModel)]="userData.contrasenia"[readonly]="!isEditing" type="password"/>
+          </mat-form-field>
+        </div>
+      </div>
+      
+      <br>
+      <div class="image-upload">
+        <div class="image-container">
+          <img *ngIf="userData.imageUrl" [src]="userData.imageUrl" alt="Profile Image" />
+        </div>
+        <div class="upload-icon" (click)="openFilePicker()">
+          <mat-icon>cloud_upload</mat-icon>
+        </div>
+        <input type="file" id="fileInput" style="display: none" (change)="handleFileChange($event)"/>
+      </div>
+
+      <button mat-raised-button class="edit" type="button" (click)="toggleEdit()">
+        {{ isEditing ? 'Cancelar' : 'Editar' }}
+      </button>
+      <button mat-raised-button class="save" type="button" (click)="saveChanges()" [disabled]="!isEditing">
+        Guardar
+      </button>
+      <div class="footer"></div>
+    </div>
