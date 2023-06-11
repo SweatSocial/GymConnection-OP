@@ -11,12 +11,12 @@ export class RegisterService {
   constructor(private http: HttpClient) { }
 
   getClients(index: any) {
-    return this.http.get<any>(`http://localhost:3000/clients/${index}`);
+    return this.http.get<any>(`https://test-api-whcc.onrender.com/clients/${index}`);
   }
   guardarDatos(cliente: Client): Observable<any> {
-    return this.http.post<any>('http://localhost:3000/clients', cliente);
+    return this.http.post<any>('https://test-api-whcc.onrender.com/clients', cliente);
   }
   getAllClients() {
-    return this.http.get<any>(`http://localhost:3000/clients`);
+    return this.http.get<any>(`https://test-api-whcc.onrender.com/clients`);
   }
 }

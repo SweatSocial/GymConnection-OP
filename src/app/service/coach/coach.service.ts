@@ -9,10 +9,10 @@ export class CoachService {
   constructor(private http: HttpClient) { }
 
   getCoachs(index: any) {
-    return this.http.get<any>(`http://localhost:3000/coachs/${index}`);
+    return this.http.get<any>(`https://test-api-whcc.onrender.com/coachs/${index}`);
   }
 
   getAllCoachs() {
-    return this.http.get<any>(`http://localhost:3000/coachs`);
+    return this.http.get<any>(`https://test-api-whcc.onrender.com/coachs`);
   }
 }

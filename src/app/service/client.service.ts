@@ -9,11 +9,11 @@ export class ClientService {
   constructor(private http: HttpClient) { }
 
   getClients(index: any) {
-    return this.http.get<any>(`http://localhost:3000/clients/${index}`);
+    return this.http.get<any>(`https://test-api-whcc.onrender.com/clients/${index}`);
   }
 
   getAllClients() {
-    return this.http.get<any>(`http://localhost:3000/clients`);
+    return this.http.get<any>(`https://test-api-whcc.onrender.com/clients`);
   }
 
 }
