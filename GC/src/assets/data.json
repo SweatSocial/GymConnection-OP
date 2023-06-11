@@ -76,10 +76,10 @@
   "coachs": [
     {
       "id": 1,
-      "name": "Elio Navarrete",
+      "name": "Francisco Herrera",
       "age": "22",
       "description": "Ingeniería de Software egresao de la UPC",
-      "image": "../../../assets/couch.png",
+      "image": "../../../assets/coach-img/couch.png",
       "department": "Lima",
       "district": "San Miguel",
       "phone": "991294929",
